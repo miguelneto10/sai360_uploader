@@ -1,0 +1,3 @@
+[console_scripts]
+sai360-upload = sai360_uploader.uploader:main
+

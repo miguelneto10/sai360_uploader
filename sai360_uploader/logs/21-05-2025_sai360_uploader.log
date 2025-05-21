@@ -1,0 +1,4 @@
+[processo1.xml]: 400 Bad Request
+[processo2.xml]: 200 OK
+[processo1.xml]: 200 OK
+[processo2.xml]: 200 OK

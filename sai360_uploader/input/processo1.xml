@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bwiseData xmlns="http://www.bwise.com/logic/xml/schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0" language="en-US" source="BWise" xsi:schemaLocation="http://www.bwise.com/logic/xml/schema http://www.bwise.com/logic/xml/schema/BWiseXML_2_0.xsd">
+   <elements>
+      <element type="lawsuit">
+         <query property="label">
+            <string>VND_2022_000014</string>
+         </query>
+         <values>
+            <value property="label">
+               <string>VND_2022_000014</string>
+            </value>
+         </values>
+      </element>
+   </elements>
+</bwiseData>

@@ -1,0 +1,12 @@
+setup.py
+sai360_uploader/__init__.py
+sai360_uploader/uploader.py
+sai360_uploader.egg-info/PKG-INFO
+sai360_uploader.egg-info/SOURCES.txt
+sai360_uploader.egg-info/dependency_links.txt
+sai360_uploader.egg-info/entry_points.txt
+sai360_uploader.egg-info/requires.txt
+sai360_uploader.egg-info/top_level.txt
+tests/__init__.py
+tests/test_login.py
+tests/test_logout.py
