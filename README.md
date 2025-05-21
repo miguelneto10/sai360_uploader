@@ -59,6 +59,12 @@ sai360_uploader/
 ├── setup.py
 ├── README.md
 ├── requirements.txt
+├── input/
+│   ├── file1.xml
+│   ├── file2.xml
+├── logs/
+├── error/
+├── processed/
 ```
 
 ## 📝 Sistema de Logs
@@ -93,7 +99,7 @@ Se o diretório não existir, será criado automaticamente.
 ## ✅ Exemplo de fluxo:
 
 1. Coloque arquivos `.xml` na pasta `./input`.
-2. Execute: `python -m sai360_uploader.uploader`
+2. Execute: `python -m sai360_uploader.uploader` ou simplesmente `sai360-upload`
 3. Arquivos serão movidos automaticamente para:
    - `./processed` → caso sucesso.
    - `./error` → caso falha.
