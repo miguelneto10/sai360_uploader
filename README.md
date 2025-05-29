@@ -71,6 +71,14 @@ sai360_uploader/
 
 A partir da versão atual, o script armazena **todos os logs de processamento** no diretório definido em `LOG_PATH`.
 
+Caso o upload retorne erro, o corpo completo da resposta da API será salvo no diretório de logs:
+
+```
+[nome-do-arquivo].xml_error_response.xml
+```
+
+Este arquivo permite análise detalhada do motivo do erro (ex: campo ausente, tipo incorreto etc).
+
 ### ✅ Características:
 
 - Cada execução escreve no arquivo de log correspondente ao **dia de execução**.
@@ -78,10 +86,21 @@ A partir da versão atual, o script armazena **todos os logs de processamento** 
   `dd-mm-aaaa_sai360_uploader.log`
 
 - Para cada arquivo XML processado, será adicionada uma linha no log com o formato:  
-  `[nome-arquivo.xml]: [status_code] [status_reason]`
+  `[nome-arquivo.xml]: [status_code] [status_reason] [error_detail]`
 
 - Além disso, um trecho do log da sessão SAI360 também será adicionado:  
   `[nome-arquivo.xml LOG]: [conteúdo parcial do log da sessão...]`
+
+- Cada linha do log contém:
+
+```
+[nome-do-arquivo.xml]: [status HTTP] [mensagem] - [resumo do erro]
+```
+
+### Exemplo:
+```
+[processo123.xml]: 400 Bad Request - Property 'label' is required for class 'lawsuit'
+```
 
 ### ✅ Como configurar:
 
